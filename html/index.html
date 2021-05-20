@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="../css/stylesapp.css">
+</head>
+<body onload="draw()">
+    <div id = "main">
+    <canvas id = "myCanvas" onclick="clicked()" width='300' height='150'  ></canvas>
+    <audio id ="mySong" onended="audioEnd()">
+    <source src="../file_example_MP3_700KB.mp3" type="audio/mp3">
+    </audio>
+    <div id = "startStop">
+    <div id = "playButton">
+    <input type="image" src="../play.png" id="player" height=35, width=35/>   
+    </div>
+   </div>
+    <script src="../javascript/app.js"></script>
+</div>
+</body>
+</html>
